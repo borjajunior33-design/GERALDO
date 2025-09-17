@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de display: grid</title>
+    <style>
+        .grid-container {
+  display: grid;/*Cria três colunas de igual largura */
+  grid-template-columns:repeat(3,1fr);/* Adiciona um espaço entre os itens da grade */
+ grid-template-columns: 1fr 1fr;/* Adiciona um espaço entre os itens da grade */
+  grid-rows:350px: inherit;
+  gap:10px;
+ 
+}
+
+.grid-item {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+    
+   
+    </style>
+</head>
+<body>
+
+   <div class="grid-container">
+  <div class="grid-item">item 1</div>
+  <div class="grid-item">item 2</div>
+  <div class="grid-item">item 3</div>
+  <div class="grid-item">item 4</div>
+  <div class="grid-item">item 5</div>
+  <div class="grid-item">item 6</div>
+</div>
+<HR>
+ 
+</body>
+</html>

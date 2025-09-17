@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>controlando alinhamentos</title>
+</head>
+<body>
+    <P>
+  
+<style>
+    .grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+  width: 600px; /* Existe espaço horizontal extra (sobra) */
+  height: 400px; /* Existe espaço vertical extra (sobra) */
+  background-color: lightgray;
+  border: 2px dashed #333;
+  
+  /* Alinhamento no eixo horizontal (justificando as colunas) */
+  justify-content: center;
+  
+  /* Alinhamento no eixo vertical (alinhando as linhas) */
+  align-content: center;
+}
+
+.grid-item {
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ </style>
+ 
+ <div class="grid-container">
+  <div class="grid-item">item 1</div>
+  <div class="grid-item">item 2</div>
+  <div class="grid-item">item 3</div>
+  <div class="grid-item">item 4</div>
+  <div class="grid-item">item 5</div>
+  <div class="grid-item">item 6</div>
+</div>
+<style>
+    .grid-container {
+  display: grid;
+  
+  /* 1. Define as colunas do grid: */
+  /* - Primeira coluna com largura fixa de 150px. */
+  /* - Segunda e terceira colunas com largura flexível (1fr), dividindo o espaço restante igualmente. */
+  grid-template-columns: 150px 1fr 1fr;
+  
+  /* 2. Define as linhas do grid: */
+  /* - Primeira linha com altura fixa de 80px (header). */
+  /* - Segunda linha com altura flexível (1fr), ocupando o espaço restante disponível. */
+  /* - Terceira linha com altura fixa de 60px (footer). */
+  grid-template-rows: 80px 1fr 60px;
+  
+  /* 3. Define a estrutura do layout usando os nomes das áreas. */
+  /* Cada string representa uma linha do grid. */
+  /* Repetir o nome da área faz com que o elemento se expanda por várias células. */
+  grid-template-areas:
+    "header header header" /* O 'header' ocupa as 3 colunas da primeira linha. */
+    "menu main main"       /* O 'menu' ocupa a primeira coluna da segunda linha; o 'main' ocupa as duas últimas. */
+    "footer footer footer"; /* O 'footer' ocupa as 3 colunas da última linha. */
+  
+  /* Propriedades de estilo adicionais para visualização */
+  gap: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+/* Atribui cada elemento à sua área nomeada */
+.header { grid-area: header; background-color: #f1c40f; }
+.menu { grid-area: menu; background-color: #3498db; }
+.main { grid-area: main; background-color: #2ecc71; }
+.footer { grid-area: footer; background-color: #95a5a6; }
+
+/* Estilização básica para os itens */
+.grid-container > div {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+</style>
+grid-template-rows: 100px 200px;
+ <div class="grid-container">
+  <div class="grid-item">item 1</div>
+  <div class="grid-item">item 2</div>
+  <div class="grid-item">item 3</div>
+  <div class="grid-item">item 4</div>
+  <div class="grid-item">item 5</div>
+  <div class="grid-item">item 6</div>
+</div>
+
+</body>
+</html>
