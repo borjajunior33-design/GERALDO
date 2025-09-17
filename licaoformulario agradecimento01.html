@@ -3,24 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agradecimento</title>
+  <link rel="stylesheet" href="indice.css">
+  <title>Formulário de Recrutamento</title>
   
-</head>
-<body style="background-color: rgb(217, 255, 0);"></bory>
+<body
+  style="background-color: rgb(227, 243, 0);"></bory>
   <header>
- 
+    </head>
+
+<body>
+
+      <p>
+  <header id="topo">
+    <h2>Portal de Notícias</h2>
+   <b> <p class="descricao">Bem-vindo ao nosso portal! Aqui você encontra informações atualizadas.</p></b>
+  </header>
+  
+    <h1>Formulário de Recrutamento</h1>
+     <article id="destaque">
+      <h2>Preencha seus dados para participar do processo seletivo.</h2>
+    
   </header>
 
   <main>
-    <section class="mensagem">
-      <h2>Formulário enviado com sucesso ✅</h2>
-      <p>Sua inscrição foi registrada e nossa equipe entrará em contato em breve.</p>
-      <a href="licaoformulario recrutamento.html" class="voltar">Voltar ao formulário</a>
+    <section>
+      <form action="licaoformulario agradecimento01.html" method="post">
+        <fieldset>
+         <U> <legend>Dados Pessoais</legend></U>
+
+         <b> <label for="nome">Nome Completo *</label>
+          <input type="text" id="nome" name="nome" required minlength="3"></b>
+
+         <b> <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" required placeholder="exemplo@email.com"></b>
+
+         <b> <label for="telefone">Telefone *</label>
+          <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(99) 99999-9999"></b>
+
+         <b> <label for="nascimento">Data de Nascimento *</label>
+          <input type="date" id="nascimento" name="nascimento" required></b>
+        </fieldset>
+
+        <fieldset>
+          <U><legend>Formação Acadêmica</legend></U>
+          <b><label for="formacao">Nível de Escolaridade *</label></b>
+          <select id="formacao" name="formacao" required>
+            <option value="">Selecione...</option>
+            <option value="medio">Ensino Médio</option>
+            <option value="tecnico">Técnico</option>
+            <option value="superior">Superior</option>
+            <option value="pos">Pós-graduação</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+         <u> <legend>Experiência Profissional</legend></u>
+          <b><label for="experiencia">Resumo da Experiência *</label></b>
+          <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+
+          <label for="tempo">Anos de Experiência *</label>
+          <input type="number" id="tempo" name="tempo" min="0" max="50" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Documentos</legend>
+         <b> <label for="curriculo">Anexar Currículo *</label></b>          <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
+        </fieldset>
+
+        <button type="submit" id="btn-enviar">Enviar Inscrição</button>
+      </form>
     </section>
   </main>
 
   <footer>
+    <main>
+    <section class="mensagem">
+      <h2>Formulário enviado com sucesso ✅</h2>
+      <p>Sua inscrição foi registrada e nossa equipe entrará em contato em breve.</p>
+      <a href="licaoformulario recrutamento.html" class="voltar">VERIFICAÇÃO DE ENVIO.</a>
+    </section>
+  </main>
+  <footer>
     <p>&copy; 2025 - Equipe de Recrutamento</p>
   </footer>
+   
 </body>
-</html>
+</h

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo display: grid</title>
+   
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);/*tres colunas de largura igual*/
+            grid-auto-rows: 50px; /* espacamento entre celulas da grade*/
+        }
+        .grid-item {
+            background-color: blueviolet;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">item 1</div>
+            <div class="grid-item">item 2</div>
+            <div class="grid-item">item 3</div>
+        
+            <div class="grid-item">item 4</div>
+            <div class="grid-item">item 5</div>
+            <div class="grid-item">item 6</div>
+        </div>
+    </body>
+</head>
+<body>
+    <BR>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns:colunas;/*tres colunas de largura igual*/
+            grid-gap: 8px; /* espacamento entre celulas da grade*/
+        }
+        .grid-item {
+            background-color: blueviolet;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">item 1</div>
+            <div class="grid-item">item 2</div>
+            <div class="grid-item">item 3</div>  
+            <div class="grid-item">item 4</div>
+            <div class="grid-item">item 5</div>
+            <div class="grid-item">item 6</div>
+            
+        </div>
+        <HR>
+        <style>      
+.container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(206, 255, 30);
+    padding: 10px;
+  }
+  
+  .container > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 70px;
+    font-size: 50px;
+    text-align: center;
+  }
+  </style>
+  <di class ="container"
+  <br>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  
+</div>
+<P></P>
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: 90px 100px 170px; /*Make the grid smaller than the container*/
+    gap: 10px;
+    background-color: rgb(221, 67, 21);
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  
+  .grid-container{ > div 
+    background-color: #f1f1f1;
+    color:#6b0a0a;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+<HR>
+    <BR>
+.grid-container {
+  display: grid;
+  grid-template-columns: 70px 70px 70px; /*Make the grid smaller than the container*/
+  gap: 10px;
+  background-color: dodgerblue;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.grid-container > div {
+  background-color: #e6d110;
+  color:#180404;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+<BR>
+    <HR>
+        <P></P>
+<div class="grid-container">   
+<div>2</div>
+<div>3</div>  
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+</div>
+
+</head>
+</body>
+</html>
