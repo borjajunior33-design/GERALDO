@@ -1,0 +1,19 @@
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 950px;
+    height: 100vh;
+    gap: 2rem;
+    margin:0 auto ;
+}
+
+div {
+    background-color: aquamarine;
+    width: 300px;
+}
