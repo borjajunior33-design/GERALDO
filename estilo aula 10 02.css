@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: rgb(242, 242, 242);
+display: grid;
+grid-template-columns: 18,75rem 1fr;
+grid-template-rows: auto 1fr auto;
+grid-template-areas: 
+"header head"
+"aside main"
+"footer fotter";
+height:100vh;
+}
+header{
+grid-area: header;
+}
+main{
+    grid-area:main ;
+    img{
+        width: 7,5rem;
+        height: 7,5rem;
+        
+    }
+}
+aside{
+    grid-area: aside;
+    background-color: #243445;
+}
+footer{
+    grid-area: footer;
+}
