@@ -5,32 +5,36 @@
 }
 
 body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-background-color: rgb(242, 242, 242);
-display: grid;
-grid-template-columns: 18,75rem 1fr;
-grid-template-rows: auto 1fr auto;
-grid-template-areas: 
-"header head"
-"aside main"
-"footer fotter";
-height:100vh;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background-color: #f6f7fb; 
+    display: grid;
+    grid-template-columns: 18.75rem 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";  
+    height: 100vh;
 }
 header{
-grid-area: header;
+    grid-area: header;
 }
 main{
-    grid-area:main ;
-    img{
-        width: 7,5rem;
-        height: 7,5rem;
-        
-    }
+    grid-area: main;
 }
 aside{
     grid-area: aside;
-    background-color: #243445;
+    background-color:#243445 ;
+    color: #f6f7fb;
+}
+
+img{
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+
 }
 footer{
     grid-area: footer;
 }
+

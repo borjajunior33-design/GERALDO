@@ -1,0 +1,23 @@
+.flex-container{
+    display: flex;
+    justify-content:space-around;
+   flex-direction:row-reverse;
+   
+}
+.flex-item{
+    background-color: rgb(89, 177, 171);
+    padding: 5,25rem;
+    margin: 1.625rem;
+    width: 15rem;
+    text-align: center;
+   
+    }
+    .flex-item{
+        background-color: rgb(89, 177, 171);
+        padding: 5,25rem;
+        margin: 1.625rem;
+        width: 15rem;
+        text-align: center;
+       
+        }
+        
